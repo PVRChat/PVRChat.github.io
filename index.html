@@ -8,25 +8,18 @@
   <title>PVRChat</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Downloads</a></li>
-        <li><a href="#">Documentation</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section class="content">
-    <h1>Welcome to the introduction of PVRChat</h1>
-    <p>PVRChat is now <strong>the</strong> most secure chat.<br>Better than IRC because your ip is not showing</p>
-  </section>
-  
-  <footer>
-    <p>&copy; 2023 PVRChat. All rights reserved.</p>
-  </footer>
+  <div id="input-container">
+    <input type="text" id="ip-input" placeholder="Server IP">
+    <input type="text" id="port-input" placeholder="Server Port">
+    <input type="text" id="nick-input" placeholder="Your Nickname">
+    <button id="connect-button">Connect</button>
+</div>
+<div id="chat-container" style="display: none;">
+    <div id="chat-box"></div>
+    <input type="text" id="message-input" placeholder="Type your message...">
+    <button id="send-button">Send</button>
+</div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
